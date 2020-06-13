@@ -141,6 +141,7 @@ ul {
   background-color: var(--SoftRed);
   color: white;
   border: none;
+  height:fit-content;
 }
 .grey-button {
   box-shadow: 0 5px 5px var(--GrayishBlue);
@@ -261,6 +262,18 @@ ul {
   content: url("images/icon-arrow.svg");
   transform: rotateX(0deg);
   stroke: hsl(0, 94%, 66%);
+}
+.error-msg{
+  display: none;
+}
+.email:invalid + .error-msg {
+  
+  display: block;
+  color: white;
+  width: 100%;
+}
+.email:invalid{
+  border: 2px solid var(--SoftRed);
 }
 
 /*____Footer____*/

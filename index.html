@@ -413,19 +413,22 @@
 
         <h2>Stay up-to-date with what we’re doing</h2>
         <form class="d-md-flex justify-content-center">
+          <div class="mx-3">
           <input
             type="email"
             name="email"
+            aria-label= "true"
             placeholder="Enter your email address"
-            class="email p-2 px-3 m-2 mt-3 mx-auto mx-md-2 rounded border-0"
+            class="email p-2 px-3 mx-2 mt-3 mb-0 mx-auto mx-md-2 rounded border-0"
           />
-          <submit
-            name="button"
+          <p class="bg-danger rounded-bottom error-msg p-2 px-3 mx-2 mt-0 mx-auto mx-md-2 small">Whoops! make sure it is an email.</p>
+        </div>
+          <input type="submit"
+            name="submit"
             aria-label="true"
             class="button red-button md-button d-block p-2 px-3 m-2 mt-3 mx-auto mx-md-2 rounded"
-          >
-            Contact Us
-          </submit>
+            value="Contact Us"
+          />
         </form>
       </div>
 
