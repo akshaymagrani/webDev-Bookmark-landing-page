@@ -1,5 +1,4 @@
-/*;
-*/
+/*____Global____*/
 :root {
   --GrayishBlue: hsl(229, 8%, 60%);
   --VeryDarkBlue: hsl(229, 31%, 21%);
@@ -20,7 +19,7 @@ ul {
   list-style: none;
 }
 
-/*Introductions*/
+/*____Introductions_____*/
 .introduction {
   background-image: url("images/mobile-bg.svg");
   background-repeat: no-repeat;
@@ -191,7 +190,7 @@ ul {
   }
 }
 
-/*Features*/
+/*____Features____*/
 .introduction,
 .features,
 .div-navigation,
@@ -221,7 +220,7 @@ ul {
   background-size: contain;
 }
 
-/*Download Extensions*/
+/*____Download Extensions____*/
 @media screen and (min-width: 768px) {
   .cards2 {
     margin-top: 2em !important;
@@ -233,7 +232,7 @@ ul {
   }
 }
 
-/*Frequently asked Questions*/
+/*____Frequently asked Questions____*/
 @media only screen and (min-width: 768px) {
   .Q-A,
   .stayUpToDate h2 {
@@ -257,14 +256,14 @@ ul {
   float: right;
   margin-left: 15px;
 }
-/* Icon when the collapsible content is hidden */
+/*Icon when the collapsible content is hidden */
 .qLink.collapsed:after {
   content: url("images/icon-arrow.svg");
   transform: rotateX(0deg);
   stroke: hsl(0, 94%, 66%);
 }
 
-/*Footer*/
+/*____Footer____*/
 .Footer {
   background-color: var(--VeryDarkBlue);
   color: white;
