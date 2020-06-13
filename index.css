@@ -14,6 +14,7 @@ body {
 }
 p {
   color: var(--GrayishBlue);
+  max-width:450px;
 }
 ul {
   list-style: none;
@@ -21,10 +22,18 @@ ul {
 
 /*Introductions*/
 .introduction {
-  background-image: url("images/bg-image.svg");
+  background-image: url("images/mobile-bg.svg");
   background-repeat: no-repeat;
-  background-position: right bottom;
+  background-position: right 200px;
   background-size: contain;
+}
+@media only screen and (min-width:768x) {
+.introduction {
+  background-image: url("images/bg-image.svg") !important;
+  background-repeat: no-repeat;
+  background-position: right 200px;
+  background-size: contain;
+}
 }
 .introduction {
   padding: 9em 1em 4em;
@@ -205,14 +214,22 @@ ul {
 #sharing {
   display: none;
 }
+.features1,.features2,.features3 {
+  background-image: url("images/mobile-bg.svg");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: contain;
+}
 
 /*Download Extensions*/
 @media screen and (min-width: 768px) {
   .cards2 {
     margin-top: 2em !important;
+    transform: translateY(30px);
   }
   .cards3 {
     margin-top: 4em !important;
+    transform: translateY(60px);
   }
 }
 
